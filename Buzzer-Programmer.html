@@ -52,7 +52,7 @@ textbox.innerHTML += " <br />";
 <div id="surface"></div>
 <details>
 <summary>Code</summary>
-<div id="code"><p>int buzzerpin = 11; <br />int bpm = 120; <br />void setup() { <br />pinMode(buzzerpin, OUTPUT); <br />} <br />void t(int frequence, float duration) <br />{ <br />tone(buzzerpin, frequence); <br />delay(1000 * (bpm / 60) * duration); <br />noTone(buzzerpin); <br />delay(duration * 1.3); <br />} <br />void p(float duration) <br />{ <br />delay(1000 * ((bpm / 60) / duration)); <br />} <br />void loop() <br />{</p>
+<div id="code"><p>int buzzerpin = 11; <br />int bpm = 120; <br />void setup() { <br />pinMode(buzzerpin, OUTPUT); <br />} <br />void t(int frequence, float duration) <br />{ <br />tone(buzzerpin, frequence); <br />delay(1000 * (bpm / 60) * duration); <br />noTone(buzzerpin); <br />delay(1000 * (bpm / 60) * duration * 0.3); <br />} <br />void p(float duration) <br />{ <br />delay(1000 * ((bpm / 60) / duration)); <br />} <br />void loop() <br />{</p>
 <p id="textbox" ></p>
 <p>}</p>
 </div>
